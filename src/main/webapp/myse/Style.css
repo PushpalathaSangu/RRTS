@@ -1,0 +1,271 @@
+:root {
+    --primary: #06BBCC;
+    --light: #F0FBFC;
+    --dark: #181d38;
+}
+img {
+    width:100%;
+    height:100%;
+}
+.icon{
+    mix-blend-mode: color-burn;
+}
+.fw-medium {
+    font-weight: 600 !important;
+}
+
+.fw-semi-bold {
+    font-weight: 700 !important;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
+
+/* nav bar */
+#page_heading{
+    text-align: center;
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+}
+
+
+/* Fixed Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Brings navbar above other content */
+    background-color: #343a40; /* Matches the navbar color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a shadow for separation */
+}
+
+#navbarNav {
+    display: flex;
+    justify-content: end;
+    margin-right: 80px;
+}
+
+.navbar-brand {
+    align-items: center;
+}
+
+.container {
+    margin-bottom: 0px;
+}
+
+/* Navbar link styling */
+.nav-link {
+    color: #bbb; /* Default link color */
+    margin-right: 20px; /* Adds space between the links */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-link:hover {
+    color: #fff; /* Changes color to white on hover */
+}
+
+
+/* carocel */
+
+
+/* carocel */
+.carousel-item img {
+    width:80%;  /* Adjust percentage as needed */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 auto; /* Center the images */
+    margin-top: 20px;
+    object-fit: cover; /* Maintains image aspect ratio */
+    image-rendering: auto; /* Improves quality on different displays */
+    filter: contrast(1.1) brightness(1.1); /* Optional: Enhances colors slightly */
+}
+.carousel-item img {
+    width: 400px; /* Set fixed width */
+    height: 400px; /* Set fixed height */
+    object-fit: cover; /* Ensures image fills the specified size without stretching */
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 200px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 500px;
+    margin-top: -5px;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds depth to the text */
+    background-color: rgba(0, 0, 0, 0.3); /* Subtle background for contrast */
+    border-radius: 8px; /* Adds a smooth corner to the background */
+}
+
+
+
+
+
+/* about us*/
+#body_head{
+    text-align:center;
+}
+#text{
+	font-size:150px;
+}
+#heading{
+    text-align:center;
+}
+#about-us .row {
+    display: flex;
+    align-items: center;
+}
+
+#about-us img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about-us h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#about-us p {
+    font-size:1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+#about-us h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+
+/* Type of road repairs */
+#repairs{
+    text-align: center;
+    margin-top: 20px;
+}
+.card {
+    width: 250px;  /* Set the width of the card */
+    margin: 10px auto;  /* Center the card and add some margin */
+}
+.card-img-top {
+    height: 150px;  /* Set a fixed height for the image */
+    object-fit: cover;  /* Ensure the image covers the area without stretching */
+}
+
+
+.container .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .card-img-top {
+    height: 200px; /* Adjust as needed for image consistency */
+    object-fit: cover; /* Ensures images are cropped to fit without stretching */
+}
+
+.container .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(61, 82, 81, 0.7);
+}
+
+.card:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* services */
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(20, 20, 20);
+}
+
+.service-item {
+    background-color: #f8f9fa; /* Soft gray background for each service */
+    border: 2px solid black;
+   
+    padding: 20px;
+    width: 49%; /* Two items side by side filling the full width */
+    box-sizing: border-box;
+    /* margin-bottom: 20px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-left: 10px; */
+    margin:5px;
+}
+
+.service-image {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.service-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.service-description {
+    font-size: 1.1em;
+    
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+/* users */
+.user_head
+{
+    margin-top: 20px;
+}
+.space{
+    margin-top: 10px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    position: relative; /* or 'fixed' if you want it at the bottom of the viewport */
+    left: 0;
+    bottom: 0;
+    background-color: #333; /* Example background color */
+    color: #fff; /* Example text color */
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
